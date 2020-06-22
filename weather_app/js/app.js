@@ -1,6 +1,6 @@
 // This is where we get the info stored in variables for using the API key(essentially we are making a url that includes the API given by the website)
 //This is the base url needed before adding API key
-const baseURL = `http://api.openweathermap.org/data/2.5/weather?`
+const baseURL = `https://api.openweathermap.org/data/2.5/weather?`
 //This is API given (also instruction given in email from webiste on how to intiate API use) 
 const apiKey = `APPID=aa0b14f498fb7226014ece3bedab8f29`
 const queryType = `q=`
