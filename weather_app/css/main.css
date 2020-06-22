@@ -1,5 +1,5 @@
 body {
-    background-image: url("landscape.jpg");
+    background-image: url("../images/landscape.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -8,6 +8,9 @@ body {
     
 }
 /* 
+
+Due to the simplicity of the program this was not needed
+
 form, #temp-to-see {
      display:flex;
      align-items: center;
