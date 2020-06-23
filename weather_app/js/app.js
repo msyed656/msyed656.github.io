@@ -30,7 +30,6 @@ const getWeather = () => {
         <h2> ${element.name} </h2>
         <h3> ${element.main.temp} Degrees Fahrenheit</h3>
         <h4> Description: ${element.weather[0].description} </h4>
-        <h5> ${element.weather[0].icon}</h5>
         <button class = "remove">remove</button>
         </div>
         `)
