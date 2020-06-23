@@ -44,4 +44,4 @@ https://msyed656.github.io/weather_app/
 - Freecodecamp
 - ToDolist HW
 - AJAX in class notes
-- https://www.youtube.com/watch?v=InoAIgBZIEA (This video cleared some issues up for me)
+- https://www.youtube.com/watch?v=InoAIgBZIEA 
