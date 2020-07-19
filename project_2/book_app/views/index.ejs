@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Index</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  
+    <style>
+        body {
+            text-align: center;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <h1>List of Books</h1>
+    <ul>
+        <% for (const book of books) { %>
+            <li>
+                Title: <a href="/books/<%= book.id %>"><%= book.title %></a><br/>
+                Author: <%= book.author %><br/>
+                <a href="/books/<%= book.id %>/edit">Edit</a><br/>
+                <form action="/books/<%= book.id %>?_method=DELETE" method="POST">
+                    <input type="submit" value="Done Reading"/>
+                </form>
+            </li>
+        <% } %>
+    </ul>
+    <a href="/books/new">Want to Read a New Book?</a>
+</body>
+</html>
