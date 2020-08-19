@@ -1,5 +1,4 @@
 import React from 'react';
-import data from './data'
 import {BrowserRouter, Route, Link, Switch} from 'react-router-dom'
 import './App.css';
 import HomePage from "./components/HomePage"
@@ -30,7 +29,7 @@ function App() {
                 <Link to= "/">Perfumery</Link>
             </div> 
             <div className= "header-links">
-                <a href="cart.html">Cart</a> 
+                <a href="cart.html">Cart</a> <br/>
                 <a href="signin.html">Sign-In</a>
             </div>
 

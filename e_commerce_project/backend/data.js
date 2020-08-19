@@ -7,7 +7,8 @@ export default {
         price: 80,
         brand: 'Tabu',
         rating: 4.0,
-        numReviews: 10
+        numReviews: 10,
+        countInStock: 9
     }, {
         _id: "2",
         name: "Sandalwood Perfume",
@@ -16,7 +17,8 @@ export default {
         price: 80,
         brand: 'New York',
         rating: 4.2,
-        numReviews: 11
+        numReviews: 11,
+        countInStock: 3,
     },{
         _id: "3",
         name: "Fresh For Men",
@@ -25,6 +27,7 @@ export default {
         price: 90,
         brand: 'Alfred Dunhill',
         rating: 4.5,
-        numReviews: 8
+        numReviews: 8,
+        countInStock: 3,
     }]
 }
