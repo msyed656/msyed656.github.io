@@ -1,6 +1,6 @@
 import React from 'react';
 import data from './data'
-import {BrowserRouter, Route, Link} from 'react-router-dom'
+import {BrowserRouter, Route, Link, Switch} from 'react-router-dom'
 import './App.css';
 import HomePage from "./components/HomePage"
 import ProductsPage from "./components/ProductsPage"
@@ -30,7 +30,7 @@ function App() {
                 <Link to= "/">Perfumery</Link>
             </div> 
             <div className= "header-links">
-                <a href="cart.html">Cart</a>
+                <a href="cart.html">Cart</a> 
                 <a href="signin.html">Sign-In</a>
             </div>
 
@@ -55,9 +55,10 @@ function App() {
 
         <main className = "main">
             <div className= "content">
-              <Route path="/products/:id" component = {ProductsPage} />
-              <Route path="/" exact={true} component = {HomePage} />
-            
+                <Switch>
+              <Route exact path="/products/:id" component = {ProductsPage} />
+              <Route exact path="/" component = {HomePage} />
+                </Switch>
             </div> 
         </main>
         <footer className = "footer">
