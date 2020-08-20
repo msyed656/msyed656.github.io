@@ -1,8 +1,9 @@
 import React from 'react';
-import {BrowserRouter, Route, Link, Switch} from 'react-router-dom'
+import {BrowserRouter, Route, Link} from 'react-router-dom'
 import './App.css';
 import HomePage from "./components/HomePage"
 import ProductsPage from "./components/ProductsPage"
+import CartPage from "./components/CartPage"
 
 function App() {
   
@@ -54,10 +55,11 @@ function App() {
 
         <main className = "main">
             <div className= "content">
-                <Switch>
-              <Route exact path="/products/:id" component = {ProductsPage} />
-              <Route exact path="/" component = {HomePage} />
-                </Switch>
+                
+              <Route path="/products/:id" component = {ProductsPage} />
+              <Route path= "/cart/:id?" component={CartPage} />
+              <Route path= "/"  exact= {true} component = {HomePage} />
+                
             </div> 
         </main>
         <footer className = "footer">
