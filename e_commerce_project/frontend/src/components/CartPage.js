@@ -30,6 +30,9 @@ function CartPage(props) {
     }
 
     return <div className ="cart">
+            <div className= "back-to-result">
+            <Link to= "/">Want to Buy More</Link>
+            </div>
 
             <div className = "cart-list">
 
@@ -55,7 +58,7 @@ function CartPage(props) {
                                 
                                 <div className="cart-name">
                                     <div>
-                                        <Link to={"/product/" + item.product}>
+                                        <Link to={"/products/" + item.product}>
                                         {item.name}
                                         </Link>
                                         
@@ -85,9 +88,9 @@ function CartPage(props) {
 
             <div className = "cart-action">
                 <h3>
-                    Subtotal ( {cartItems.reduce((a, c) => a + c.qty, 0)} items)
-                    :
-                    $ {cartItems.reduce((a, c) => a + c.price * c.qty, 0)}
+                    {/* Subtotal ( {cartItems.reduce((a, c) => a + c.qty, 0)} items)
+                    : */}
+                    Total is: $ {cartItems.reduce((a, c) => a + c.price * c.qty, 0)}
 
                 </h3>
 

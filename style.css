@@ -1,0 +1,20 @@
+html {
+    font-family: 'Gill Sans';
+    font-size: 14 rem;
+}
+
+header {
+    background-color: indianred;
+    text-align: center;
+}
+
+.projects {
+    background-color: indigo;
+    text-align: center;
+}
+
+.bio {
+    background-color: lavender;
+    text-align: center;
+
+}
