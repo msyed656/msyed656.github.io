@@ -1,0 +1,38 @@
+
+
+body {
+  background-image: url("./images/currency_exchange.jpg");
+  
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  text-align: center;
+}
+
+h1 {
+
+  margin: 0;
+  margin-bottom: 10rem;
+  margin-top: 10rem;
+  font: 40px Arial, sans-serif;
+  font-weight: bold;
+}
+
+
+.input {
+  border: 3px  solid rgb(82, 19, 82);
+  border-radius: 1em;
+  padding: .5rem;
+  width: 9em;
+}
+
+select {
+  margin-left: 1rem;
+}
+
+.statement {
+  font: 30px Arial, sans-serif;
+  font-weight: bold;
+}
